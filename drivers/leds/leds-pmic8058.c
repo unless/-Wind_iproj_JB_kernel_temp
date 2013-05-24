@@ -27,7 +27,7 @@
 #if defined (CONFIG_PM)&&(CONFIG_HAS_EARLYSUSPEND)
 #include <linux/earlysuspend.h>
 #endif
-#include <../../lge/include/board_lge.h>
+#include <../lge/include/board_lge.h>
 //                                                                                      
 #endif /* ==================================================================================== */
 
