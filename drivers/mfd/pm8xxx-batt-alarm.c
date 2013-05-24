@@ -16,10 +16,12 @@
 
 #define pr_fmt(fmt)	"%s: " fmt, __func__
 
+/*
 #ifndef CONFIG_LGE_PM_BATTERY_ALARM
 #undef CONFIG_LGE_PM_BATTERY_ALARM
 #define LGE_DEBUG
 #endif
+*/
 
 #include <linux/err.h>
 #include <linux/interrupt.h>
@@ -127,7 +129,7 @@
 #endif
 
 #ifdef CONFIG_LGE_PM_BATTERY_ALARM
-#define LGE_DEBUG
+//#define LGE_DEBUG
 #define DEFAULT_THRESHOLD_LOWER_CALC(x)		(3300 - (x*0))
 #define DEFAULT_THRESHOLD_UPPER_CALC(x)		(4350 - (x*150))
 
